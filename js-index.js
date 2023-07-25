@@ -6,7 +6,7 @@ function start() {
         location.href = "index2.html";
     } else {
         document.getElementById("setimg").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
-        //document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
+        document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic/img986.jpg"
     }
     for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
