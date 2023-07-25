@@ -5,8 +5,8 @@ function start() {
 
         location.href = "index2.html";
     } else {
-        document.getElementById("setimg").src = "pic/img921.jpg"
-        //document.getElementById("setimg2").src = "pic/img921.jpg"
+        document.getElementById("setimg").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
+        //document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
     }
     for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
@@ -33,7 +33,7 @@ function next2(){
     document.getElementById("all3").style.opacity = "1";
 }
 function test1() {
-    document.getElementById("img").src = "pic/img010.jpg";
+    document.getElementById("img").src = "https://matsuoka18.github.io/Canada-Photos/pic/img010.jpg";
 }
 
 document.getElementById("text").addEventListener('keyup', search);
@@ -44,7 +44,7 @@ function search() {
     console.log("log:" + textlast);
     if (textlast == 3) {
         console.log("search");
-        text = "pic/img" + text + ".jpg";
+        text = "https://matsuoka18.github.io/Canada-Photos/https://matsuoka18.github.io/Canada-Photos/pic/img" + text + ".jpg";
         textt = text;
         document.getElementById("img").src = text;
         document.getElementById("down").style.display = "block";
@@ -395,7 +395,7 @@ pushnum = 1;
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -460,7 +460,7 @@ pushnum = 1;
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -616,7 +616,7 @@ function p2() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -645,7 +645,7 @@ function p2() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
  
@@ -675,7 +675,7 @@ function p2() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -755,7 +755,7 @@ function p3() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -784,7 +784,7 @@ function p3() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -879,7 +879,7 @@ function p3() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -959,7 +959,7 @@ function p4() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1032,7 +1032,7 @@ function p5() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1091,7 +1091,7 @@ function p6() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -1142,7 +1142,7 @@ function p6() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1207,7 +1207,7 @@ function p7() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1273,7 +1273,7 @@ function p7() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1353,7 +1353,7 @@ function p8() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1478,7 +1478,7 @@ function p8() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1638,7 +1638,7 @@ function p9() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1801,7 +1801,7 @@ function p9() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1873,7 +1873,7 @@ function p10() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1902,7 +1902,7 @@ function p10() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -1999,7 +1999,7 @@ function p11() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -2118,7 +2118,7 @@ function p11() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "pic/img" + num + ".jpg";
+                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -2166,7 +2166,7 @@ function p12() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
-            num = "pic/img" + num + ".jpg";
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
