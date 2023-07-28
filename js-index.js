@@ -1,6 +1,8 @@
+pics22p = '';
 function start() {
     size = screen.width;
     console.log("size:" + size);
+    pics22p = document.getElementById("pics22p");
     if (size < 760) {
 
         location.href = "index2.html";
@@ -22,6 +24,7 @@ function next1() {
     document.getElementById("all2").style.opacity = "1";
     document.getElementById("all3").style.display = "none";
     document.getElementById("all3").style.opacity = "0";
+
     for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
@@ -42,6 +45,8 @@ function next2(){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
     }
+    document.getElementById("pics22p").style.display="none"
+    document.getElementById("pics22p").style.opacity=0
     scrollTo(0,0);
 }
 function test1() {
@@ -402,6 +407,7 @@ pushnum = 1;
         document.getElementById("name").innerHTML = "Aaron";
         dataa = [19, 396, 716, 727, 753, 768, 782, 802, 850, 857, 864, 870, 941];
         }else if(message2 == "japan"){
+            alert()
             document.getElementById("name").innerHTML = "Ao";
             dataa = []
         }
@@ -1294,6 +1300,10 @@ function p7() {
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Rui";
         dataa = [19,
@@ -1386,16 +1396,15 @@ function p7() {
             939,
             968];
         }else if(message2 == "japan"){
-            document.getElementById("name").innerHTML = "Shinjuku";
+            document.getElementById("namea").innerHTML = "Shinjuku";
             dataa = [];
             for(var a = 1041; a<=1057; a++){
-                data.push(a);
+                dataa.push(a);
             }
-            
         }
             last = dataa.length;
             te = "Total:"+last;
-            document.getElementById("sum").innerHTML = te;
+            document.getElementById("suma").innerHTML = te;
             console.log("last:"+last);
             for (var a = 0; a < last; a++) {
                 num = dataa[a]-1;
@@ -1415,7 +1424,7 @@ function p7() {
                 num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
             }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
-                pics22p.insertAdjacentHTML('beforeend', data);
+                pics22pa.insertAdjacentHTML('beforeend', data);
             }
             if(last <135){
                 for(var a = last; a<=135; a++){
