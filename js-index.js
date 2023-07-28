@@ -8,10 +8,10 @@ function start() {
         document.getElementById("setimg").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
         document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic/img986.jpg"
     }
-    for(var a =0; a<=135; a++){
+    /*for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
-    }
+    }*/
 }
 
 function next1() {
@@ -22,6 +22,13 @@ function next1() {
     document.getElementById("all2").style.opacity = "1";
     document.getElementById("all3").style.display = "none";
     document.getElementById("all3").style.opacity = "0";
+    for(var a =0; a<=135; a++){
+        data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
+        pics22p.insertAdjacentHTML('beforeend', data);
+    }
+    document.getElementById("pics22p").style.display="none"
+    document.getElementById("pics22p").style.opacity=0
+    scrollTo(0,0);
 }
 function next2(){
     message2 = "japan";
@@ -31,6 +38,11 @@ function next2(){
     document.getElementById("all2").style.opacity = "0";
     document.getElementById("all3").style.display = "block";
     document.getElementById("all3").style.opacity = "1";
+    for(var a =0; a<=135; a++){
+        data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
+        pics22p.insertAdjacentHTML('beforeend', data);
+    }
+    scrollTo(0,0);
 }
 function test1() {
     document.getElementById("img").src = "https://matsuoka18.github.io/Canada-Photos/pic/img010.jpg";
@@ -71,6 +83,8 @@ function back() {
     document.getElementById("all1").style.opacity = "1";
     document.getElementById("all2").style.display = "none";
     document.getElementById("all2").style.opacity = "0";
+    document.getElementById("all3").style.display = "none";
+    document.getElementById("all3").style.opacity = "0";
     document.getElementById("down").style.display = "none";
 }
 function DownLoad() {
@@ -92,9 +106,12 @@ function search3() {
         document.getElementById("tables").style.opacity = "0";
         num = 0;
     }
+
 }
 message = '';
 function people() {
+    document.getElementById("pics22p").style.display="block"
+    document.getElementById("pics22p").style.opacity=1;
     message = "people";
     if(message2 == "canada"){
     document.getElementById("search2").style.display = "block";
@@ -129,7 +146,7 @@ function people() {
         document.getElementById("search44").style.display = "none";
         document.getElementById("search44").style.opacity = "0";
         document.getElementById("search55").style.display = "none";
-        document.getElementById("search56").style.opacity = "0";
+        document.getElementById("search55").style.opacity = "0";
         document.getElementById("span221").style.borderLeft = "0.4vw solid white";
         document.getElementById("span222").style.borderBottom = "0vw solid white";
         document.getElementById("span221").style.paddingRight = "0px";
@@ -139,6 +156,8 @@ function people() {
     }
 }
 function place() {
+    document.getElementById("pics22p").style.display="block"
+    document.getElementById("pics22p").style.opacity=1;
     message = "place";
     if(message2 == "canada"){
     document.getElementById("search2").style.display = "block";
@@ -183,6 +202,8 @@ document.getElementById("span2221").style.paddingRight = "0";
 }
 }
 function other(){
+    document.getElementById("pics22p").style.display="block"
+    document.getElementById("pics22p").style.opacity=1;
     message = "other";
     if(message2 == "canada"){
     document.getElementById("search2").style.display = "block";
@@ -377,8 +398,13 @@ pushnum = 1;
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
     if (message == "people") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Aaron";
         dataa = [19, 396, 716, 727, 753, 768, 782, 802, 850, 857, 864, 870, 941];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Ao";
+            dataa = []
+        }
         last = dataa.length;
         te = "Total:"+last;
         document.getElementById("sum").innerHTML = te;
@@ -395,7 +421,11 @@ pushnum = 1;
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+            if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -406,6 +436,7 @@ pushnum = 1;
             }
         }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "House";
         dataa = [132,
             216,
@@ -444,6 +475,10 @@ pushnum = 1;
             963,
             978,
             983];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "House";
+            dataa = []
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -460,7 +495,11 @@ pushnum = 1;
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -491,12 +530,9 @@ function p2() {
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
     if (message == "people") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Ao";
-        dataa = [2, 4, 7, 9, 13, 5, 19,
-            29,
-            33,
-            53,
-            59,
+        dataa = [2, 4, 7, 9, 13, 5, 19,29,33,53,59,
             63,
             68,
             74,
@@ -600,6 +636,10 @@ function p2() {
             956,
             957,
             958, 962, 965, 969, 977, 980];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Aoto";
+            dataa =[1027,1028,1055,1058,1064];
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -616,7 +656,11 @@ function p2() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -627,8 +671,13 @@ function p2() {
                 }
             }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "GHS";
         dataa = [87, 469, 470, 471, 475, 476, 477, 481, 482, 483, 484, 485, 486, 487];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Yokohama";
+            dataa = [987,988,989,990,991,992,993,994,995,996,997,998,999,1000,1001,1002,1003,1004];
+        }
         last = dataa.length;
         te = "Total:"+last;
         document.getElementById("sum").innerHTML = te;
@@ -645,7 +694,11 @@ function p2() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
  
@@ -675,7 +728,11 @@ function p2() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -699,6 +756,7 @@ function p3() {
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
     if (message == "people") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Aoto";
         dataa = [19,
             55,
@@ -740,6 +798,10 @@ function p3() {
             801,
             951];
             last = dataa.length;
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Brandon";
+            dataa =[]
+        }
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
             console.log("last:"+last);
@@ -755,7 +817,11 @@ function p3() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
+                            if(num < 984){
                 num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -766,8 +832,13 @@ function p3() {
                 }
             }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Science .M";
         dataa = [540, 541, 542, 543, 544, 545, 546, 547];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Nissan Head Office";
+            detaa = [993,994,995,996,997,998,999];
+        }
         last = dataa.length;
         te = "Total:"+last;
         document.getElementById("sum").innerHTML = te;
@@ -784,7 +855,11 @@ function p3() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -879,7 +954,11 @@ function p3() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -903,6 +982,7 @@ function p4() {
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
     if (message == "people") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Brandon";
         dataa = [3,
             36,
@@ -943,6 +1023,10 @@ function p4() {
             879,
             928,
             931];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Colin";
+            dataa = [];
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -959,7 +1043,11 @@ function p4() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -970,8 +1058,14 @@ function p4() {
                 }
             }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "History .M";
         data = [];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Akihabara";
+            dataa = []
+            //表示処理なし
+        }
         for(var a =0; a<=135; a++){
             data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
@@ -995,7 +1089,9 @@ function p5() {
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    
     if (message == "people") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Colin";
         dataa = [19,
             36,
@@ -1016,6 +1112,10 @@ function p5() {
             721,
             744,
             831];
+        }else if(message2 == "japan"){
+           document.getElementById("name").innerHTML = "Ethan";
+           dataa = []
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -1032,7 +1132,11 @@ function p5() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1043,8 +1147,14 @@ function p5() {
                 }
             }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "OMG Park";
         data = [];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "House of Parliament";
+            dataa = [];
+            //表示処理なし
+        }
         for(var a =0; a<=135; a++){
             data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
@@ -1091,7 +1201,11 @@ function p6() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -1102,6 +1216,7 @@ function p6() {
             }
         }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Ice Hockey";
         dataa = [35,
             80,
@@ -1126,6 +1241,10 @@ function p6() {
             752,
             839,
             841];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Museums";
+            dataa = []
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -1142,7 +1261,11 @@ function p6() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1207,7 +1330,11 @@ function p7() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1218,6 +1345,7 @@ function p7() {
                 }
             }
     } else if (message == "place") {
+        if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Pink .L";
         dataa = [25,
             36,
@@ -1257,6 +1385,14 @@ function p7() {
             915,
             939,
             968];
+        }else if(message2 == "japan"){
+            document.getElementById("name").innerHTML = "Shinjuku";
+            dataa = [];
+            for(var a = 1041; a<=1057; a++){
+                data.push(a);
+            }
+            
+        }
             last = dataa.length;
             te = "Total:"+last;
             document.getElementById("sum").innerHTML = te;
@@ -1273,7 +1409,11 @@ function p7() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1353,7 +1493,11 @@ function p8() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1478,7 +1622,11 @@ function p8() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1638,7 +1786,11 @@ function p9() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1801,7 +1953,11 @@ function p9() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1873,7 +2029,11 @@ function p10() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -1902,7 +2062,11 @@ function p10() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
@@ -1999,7 +2163,11 @@ function p11() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -2118,7 +2286,11 @@ function p11() {
                     num = "0" + String(num);
                     console.log("newnum:"+num);
                 }
-                num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+                            if(num < 984){
+            num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
@@ -2166,7 +2338,11 @@ function p12() {
                 num = "0" + String(num);
                 console.log("newnum:"+num);
             }
+                        if(num < 984){
             num = "https://matsuoka18.github.io/Canada-Photos/pic/img" + num + ".jpg";
+            }else{
+                num = "https://matsuoka18.github.io/Canada-Photos/pic2/img" + num + ".jpg";
+            }
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
