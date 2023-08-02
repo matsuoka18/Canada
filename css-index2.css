@@ -34,6 +34,9 @@ body{
         height:auto;
         margin-top:80vw;
     }
+    .img1 .img2{
+        margin-top:0;
+    }
     .img1 p{
         margin-top:-120vw;
         padding:0;
@@ -64,7 +67,9 @@ body{
      outline:none;
     font-weight:550;
     }
-    
+    .img1 .div1{
+        margin-bottom:10vw;
+    }
     .all2{
         display: none;
         opacity:0;
@@ -437,4 +442,8 @@ body{
     .send div:active{
         font-weight:550;
         border:none;
+    }
+    .all3 {
+        display: none;
+        opacity: 0;
     }
