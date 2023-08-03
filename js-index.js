@@ -9,6 +9,7 @@ function start() {
     } else {
         document.getElementById("setimg").src = "https://matsuoka18.github.io/Canada-Photos/pic/img921.jpg"
         document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic/img986.jpg"
+        document.getElementById("setimg3").src = "https://matsuoka18.github.io/Canada-Photos/pic/img589.jpg"
     }
     /*for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
@@ -48,6 +49,9 @@ function next2(){
     document.getElementById("pics22p").style.display="none"
     document.getElementById("pics22p").style.opacity=0
     scrollTo(0,0);
+}
+function next3(){
+    location.href="video.html";
 }
 function test1() {
     document.getElementById("img").src = "https://matsuoka18.github.io/Canada-Photos/pic/img010.jpg";
