@@ -2674,6 +2674,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Ao";
@@ -2867,6 +2871,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Aoto";
@@ -3059,6 +3067,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Brandon";
@@ -3189,6 +3201,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     
     if (message == "people") {
         if(message2 == "canada"){
@@ -3321,6 +3337,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Kota";
         dataa = [440, 632, 816, 855];
@@ -3589,6 +3609,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Shogo";
         dataa = [3,6,19,65,74,89,100,105,159,163,170,237,252,266,268,286,300,348,358,365,401,410,414,604,611,654,745,769,775,780,813,876,974];
@@ -3684,6 +3708,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Shun";
         dataa = [6,8,9,13,15,19,33,43,58,63,67,74,80,95,97,99,109,114,116,120,126,133,158,163,170,193,197,225,228,235,252,253,259,262,265,268,274,293,300,303,306,321,323,328,331,348,356,365,369,376,379,392,396,409,413,414,416,427,428,432,440,588,599,610,627,643,652,654,657,663,664,669,677,688,700,711,737,741,744,746,769,770,773,775,778,780,794,823,831,838,842,843,846,849,861,863,876,884,902,903,904,905,914,929,930,941,942,952,957,961,964,965,975];
@@ -3779,6 +3807,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Shuwa";
         dataa = [42,88,144,197,228,381,409,412,413,604,644,663,801,815,816,823,846,879,905,928,942,944,948,965,972];
@@ -3874,6 +3906,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Taisei";
         dataa = [6,9,22,67,95,110,123,137,144,197,217,228,253,262,265,327,381,409,413,440,622,630,644,663,709,711,724,758,786,815,823,835,846,863,866,867,869,882,893,903,905,923,929,932,940,942,948,965,982,984];
@@ -3969,6 +4005,10 @@ document.getElementById("tables").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         document.getElementById("name").innerHTML = "Yuki";
         dataa = [441, 482, 632, 816];
