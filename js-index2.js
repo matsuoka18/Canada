@@ -2503,6 +2503,10 @@ document.getElementById("tables22").style.opacity = "0";
     document.getElementById("pics2").style.opacity = "0";
     document.getElementById("pics22").style.display = "block";
     document.getElementById("pics22").style.opacity = "1";
+    document.getElementById("pics2a").style.display = "none";
+    document.getElementById("pics2a").style.opacity = "0";
+    document.getElementById("pics22a").style.display = "block";
+    document.getElementById("pics22a").style.opacity = "1";
     if (message == "people") {
         if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Aaron";
