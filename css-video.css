@@ -20,12 +20,15 @@ margin-left:5vw;
     font-weight: 550;
     border-bottom:0.2vw solid black;
 }
+.div2{
+    margin-top:5vw;
+}
 .div2 h4{
     width:30vw;
     text-align: center;
     padding:1vw;
     border-radius:5vw;
-    box-shadow: 5px 10px 30px 2px lightgray;
+    box-shadow: 5px 10px 20px 2px lightgray;
 }
 .div3{
     width:80vw;
@@ -52,4 +55,12 @@ margin-left:5vw;
     border:none;
     border-radius: 1vw;
     box-shadow: 0 0 5px 2px gray;
+}
+.ca{
+    display: none;
+    opacity: 0;
+}
+.jp{
+    display: none;
+    opacity: 0;
 }
