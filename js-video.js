@@ -1,3 +1,13 @@
+function start(){
+    size = screen.width;
+    console.log("size:" + size);
+    if (size < 760) {
+
+        location.href = "video2.html";
+    } else {
+      return;
+    }
+}
 function p1(){
     document.getElementById("p1").style.fontWeight = "600";
     document.getElementById("p2").style.fontWeight = "500";
