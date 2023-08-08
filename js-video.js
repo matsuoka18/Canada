@@ -1,10 +1,11 @@
+number = 0;
 function start(){
     size = screen.width;
     console.log("size:" + size);
     if (size < 760) {
 
         location.href = "video2.html";
-        ani();
+        number = 2;
     } else {
       return;
     }
@@ -35,10 +36,26 @@ function start4(){
 function p1(){
     document.getElementById("p1").style.fontWeight = "600";
     document.getElementById("p2").style.fontWeight = "500";
-    location.href="canada2.html";
+    size = screen.width;
+    if(size < 760){
+        location.href="canada2.html";
+    }else{
+        document.getElementById("ca").style.display = "block";
+        document.getElementById("ca").style.opacity = 1;
+        document.getElementById("jp").style.display = "none"
+        document.getElementById("jp").style.opacity = 0;
+    }
+    
 }
 function p2(){
     document.getElementById("p2").style.fontWeight = "600";
     document.getElementById("p1").style.fontWeight = "500";
-    location.href="japan2.html";
+    if(size < 760){
+        location.href="japan2.html";
+    }else{
+        document.getElementById("ca").style.display = "none";
+        document.getElementById("ca").style.opacity = 0;
+        document.getElementById("jp").style.display = "block"
+        document.getElementById("jp").style.opacity = 1;
+    }
 }
