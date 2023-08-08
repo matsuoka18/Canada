@@ -50,6 +50,7 @@ function p1(){
 function p2(){
     document.getElementById("p2").style.fontWeight = "600";
     document.getElementById("p1").style.fontWeight = "500";
+        size = screen.width;
     if(size < 760){
         location.href="japan2.html";
     }else{
