@@ -4,10 +4,10 @@ function start() {
     document.getElementById("setimg").src = "https://matsuoka18.github.io/Canada-Photos/pic/Img999.JPG";
     document.getElementById("setimg2").src = "https://matsuoka18.github.io/Canada-Photos/pic2/img1029.jpg";
     document.getElementById("setimg3").src = "https://matsuoka18.github.io/Canada-Photos/pic/img953.jpg";
-    for(var a =0; a<=135; a++){
+    /*for(var a =0; a<=135; a++){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
-    }
+    }*/
 }
 
 
@@ -27,6 +27,7 @@ function next1() {
     document.getElementById("pics22p").style.display="none"
     document.getElementById("pics22p").style.opacity=0
     scrollTo(0,0);
+
 }
 function next2(){
     message2 = "japan";
@@ -409,7 +410,7 @@ document.getElementById("ims135").remove();
 }
 pushnum = 1;
     function p1() {
-del();
+
 if(message2 == "canada"){
 document.getElementById("search2").style.display = "none";
 document.getElementById("search2").style.opacity = "0";
@@ -429,6 +430,7 @@ document.getElementById("tables22").style.opacity = "0";
     document.getElementById("pics2a").style.opacity = "0";
     document.getElementById("pics22a").style.display = "block";
     document.getElementById("pics22a").style.opacity = "1";
+del();
     if (message == "people") {
         if(message2 == "canada"){
         document.getElementById("name").innerHTML = "Aaron";
@@ -457,12 +459,25 @@ document.getElementById("tables22").style.opacity = "0";
             data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
             pics22p.insertAdjacentHTML('beforeend', data);
         }
+bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
+pics22p.insertAdjacentHTML('beforeend', bt);
+
         if(last <135){
+
             for(var a = last; a<=135; a++){
                 data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
         }
+last = parseInt(last);
+lastpicd = "ims"+last;
+ldp = document.getElementById(lastpicd).getBoundingClientRect().bottom;
+
+ldp = parseInt(ldp)*8+"px";
+document.getElementById("backk")
+.style.position = "absolute";
+document.getElementById("backk").style.top = ldp;
+
         }else if(message2 == "japan"){
             document.getElementById("namea").innerHTML = "Ao";
             dataa = []
@@ -526,12 +541,15 @@ document.getElementById("tables22").style.opacity = "0";
                 data = "<img src=" + "\"" + num + "\"" + "id="+"\""+"ims"+a+"\""+">";
                 pics22p.insertAdjacentHTML('beforeend', data);
             }
+bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
+pics22p.insertAdjacentHTML('beforeend', bt);
             if(last <135){
                 for(var a = last; a<=135; a++){
                     data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
                     pics22p.insertAdjacentHTML('beforeend', data);
                 }
             }
+
         }else if(message2 == "japan"){
             document.getElementById("namea").innerHTML = "House";
             dataa = []

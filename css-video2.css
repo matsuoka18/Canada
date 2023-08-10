@@ -40,14 +40,14 @@ margin-left:5vw;
     
 }
 .div3{
-    width:90vw;
+    width:97.5vw;
     height: 75vw;
-    margin-left:5vw;
+    margin-left:1.25vw;
     border-radius:2vw;
     box-shadow: 5px 10px 30px 2px lightgray;
 }
 .div3 h5{
-    font-size:7.5vw;
+    font-size:8vw;
     margin-left:5vw;
     margin-bottom:2.5vw;
     padding-top:3vw;
@@ -58,13 +58,18 @@ margin-left:5vw;
     font-weight:550;
 }
 .div3 iframe{
-    width:80vw;
-    height:43.9vw;
-    margin-left:5vw;
+    width:97.5vw;
+    height:54vw;
+    margin-left:1.25vw;
+margin-left:0;
     outline:none;
     border:none;
     border-radius: 1vw;
+border-radius:0;
     box-shadow: 0 0 5px 2px gray;
+box-shadow:none;
+border-top:2px solid black;
+padding-top:0.5vw;
 }
 
 .div11 p{
@@ -76,4 +81,20 @@ margin-left:5vw;
 .div1{
     display: none;
     opacity:0;
+}
+.p{
+animation-name:pp;
+animation-fill-mode:backwards;
+animation-duration:1.0s;
+animation-iteration-count:infinite;
+animation-timing-function:liner;
+
+}
+@keyframes pp{
+from{
+opacity:1;
+}
+to{
+opacity:0;
+}
 }
