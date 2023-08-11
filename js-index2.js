@@ -24,6 +24,8 @@ function next1() {
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
     }
+    bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
+    pics22p.insertAdjacentHTML('beforeend', bt);
     document.getElementById("pics22p").style.display="none"
     document.getElementById("pics22p").style.opacity=0
     scrollTo(0,0);
@@ -41,6 +43,8 @@ function next2(){
         data = "<img src=" + "\""  + "\"" + "id="+"\""+"ims"+a+"\""+">";
         pics22p.insertAdjacentHTML('beforeend', data);
     }
+    bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
+    pics22p.insertAdjacentHTML('beforeend', bt);
     document.getElementById("pics22p").style.display="none"
     document.getElementById("pics22p").style.opacity=0
     scrollTo(0,0);
@@ -472,12 +476,7 @@ del();
         }
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
-lt = "ims"+last;
-btm = document.getElementById(lt).getBoundingClientRect().bottom;
-btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
-btn = parseInt(btm2)-parseInt(btm)+"px";
-document.getElementById("backk").style.position = "relative";
-document.getElementById("backk").style.bottom = btn;
+
         }else if(message2 == "japan"){
             document.getElementById("namea").innerHTML = "Ao";
             dataa = []
@@ -599,7 +598,12 @@ document.getElementById("backk").style.bottom = btn;
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p2() {
 del();
@@ -806,7 +810,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p3() {
 del();
@@ -1013,7 +1022,12 @@ document.getElementById("tables").style.opacity = "0";
             bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
             pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p4(){ //処理の見直しが必要かも　7月31日
 del();
@@ -1156,7 +1170,12 @@ pics22p.insertAdjacentHTML('beforeend', bt);
         }
     
 }
-
+lt = "ims"+last;
+btm = document.getElementById(lt).getBoundingClientRect().bottom;
+btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+btn = parseInt(btm2)-parseInt(btm)+"px";
+document.getElementById("backk").style.position = "relative";
+document.getElementById("backk").style.bottom = btn;
 }
 function p5() {
 del();
@@ -1301,7 +1320,12 @@ pics22p.insertAdjacentHTML('beforeend', bt);
         }
     }
     //May be mistaked
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p6() {
 del();
@@ -1444,7 +1468,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p7() {
 del();
@@ -1591,7 +1620,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p8() {
 del();
@@ -1697,7 +1731,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p9() {
 del();
@@ -1803,7 +1842,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p10() {
 del();
@@ -1909,7 +1953,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p11() {
 del();
@@ -2015,7 +2064,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function p12() {
 del();
@@ -2094,7 +2148,12 @@ document.getElementById("tables").style.opacity = "0";
         bt = "<div class="+"\""+"back"+"\""+"id="+"\""+"backk"+"\""+"onclick="+"\""+"back()"+"\""+">back</div>";
         pics22p.insertAdjacentHTML('beforeend', bt);
     }
-
+    lt = "ims"+last;
+    btm = document.getElementById(lt).getBoundingClientRect().bottom;
+    btm2 = document.getElementById("ims135").getBoundingClientRect().bottom;
+    btn = parseInt(btm2)-parseInt(btm)+"px";
+    document.getElementById("backk").style.position = "relative";
+    document.getElementById("backk").style.bottom = btn;
 }
 function send(){
     //location.href = 'mailto:'+'kazukazu.18@icloud.com'+'?subject='+'本文に写真を添付して送ってね';
